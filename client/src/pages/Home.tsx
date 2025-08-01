@@ -9,11 +9,11 @@ export default function Home() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-medical-blue rounded-full flex items-center justify-center">
-                <i className="fas fa-user-md text-white text-lg"></i>
+                <i className="fas fa-robot text-white text-lg"></i>
               </div>
               <div>
                 <h1 className="text-xl font-bold text-slate-900">Dược Sĩ Hoàng</h1>
-                <p className="text-sm text-slate-600">Trợ lý AI chuyên nghiệp</p>
+                <p className="text-sm text-slate-600">Trợ lý AI thông minh</p>
               </div>
             </div>
             

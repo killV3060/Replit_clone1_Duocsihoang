@@ -1,8 +1,8 @@
 # Overview
 
-This is a Vietnamese pharmacy AI assistant application called "Dược Sĩ Hoàng" (Pharmacist Hoang). The application provides professional pharmaceutical consultations and health advice through a chat interface. Built as a full-stack web application, it combines a React frontend with an Express.js backend, integrated with Google's Gemini AI for generating contextual pharmacy responses in Vietnamese.
+This is a Vietnamese AI assistant application called "Dược Sĩ Hoàng" (Pharmacist Hoang). The application provides intelligent assistance and can answer questions about any topic through a chat interface. Built as a full-stack web application, it combines a React frontend with an Express.js backend, integrated with Google's Gemini AI for generating comprehensive responses in Vietnamese.
 
-The system is designed to help users with medication advice, dosage information, side effects, drug storage guidelines, and general health recommendations while emphasizing the importance of consulting healthcare professionals.
+The system is designed to help users with questions across all fields including science, technology, history, education, business, health, entertainment, and daily life topics. It uses a friendly and intelligent AI personality named "Hoàng".
 
 # User Preferences
 
@@ -38,7 +38,7 @@ Preferred communication style: Simple, everyday language.
 
 ## AI Integration
 - **AI Provider**: Google Gemini AI (gemini-2.5-flash model)
-- **Specialized Prompting**: Custom Vietnamese pharmacy assistant persona
+- **AI Persona**: General-purpose intelligent assistant named "Hoàng" capable of answering questions across all domains
 - **Response Handling**: Structured error handling with fallback messages
 - **Temperature**: Controlled at 0.7 for balanced creativity and accuracy
 

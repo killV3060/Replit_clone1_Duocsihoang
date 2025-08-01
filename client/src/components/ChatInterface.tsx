@@ -128,29 +128,29 @@ export default function ChatInterface() {
         {messages.length === 0 && (
           <div className="mb-8 text-center">
             <div className="w-16 h-16 bg-gradient-to-br from-medical-blue to-trust-blue rounded-full flex items-center justify-center mx-auto mb-4">
-              <i className="fas fa-pills text-white text-2xl"></i>
+              <i className="fas fa-brain text-white text-2xl"></i>
             </div>
             <h2 className="text-2xl font-bold text-slate-900 mb-2">Chào mừng đến với Dược Sĩ Hoàng</h2>
-            <p className="text-slate-600 max-w-md mx-auto">Tôi là trợ lý AI chuyên nghiệp về dược phẩm và sức khỏe. Hãy đặt câu hỏi để tôi có thể hỗ trợ bạn.</p>
+            <p className="text-slate-600 max-w-md mx-auto">Tôi là Hoàng, trợ lý AI thông minh có thể giúp bạn trả lời mọi câu hỏi về bất kỳ lĩnh vực nào!</p>
             
             <div className="mt-6 space-y-2">
               <p className="text-sm font-medium text-slate-700">Tôi có thể giúp bạn:</p>
               <ul className="space-y-1 text-slate-600 text-sm">
                 <li className="flex items-center justify-center space-x-2">
                   <i className="fas fa-check text-healthcare-green text-xs"></i>
-                  <span>Tư vấn về thuốc và liều dùng</span>
+                  <span>Trả lời mọi câu hỏi kiến thức</span>
                 </li>
                 <li className="flex items-center justify-center space-x-2">
                   <i className="fas fa-check text-healthcare-green text-xs"></i>
-                  <span>Thông tin về tác dụng phụ</span>
+                  <span>Giải thích và phân tích vấn đề</span>
                 </li>
                 <li className="flex items-center justify-center space-x-2">
                   <i className="fas fa-check text-healthcare-green text-xs"></i>
-                  <span>Hướng dẫn bảo quản thuốc</span>
+                  <span>Tư vấn và đưa ra gợi ý</span>
                 </li>
                 <li className="flex items-center justify-center space-x-2">
                   <i className="fas fa-check text-healthcare-green text-xs"></i>
-                  <span>Lời khuyên sức khỏe tổng quát</span>
+                  <span>Hỗ trợ học tập và nghiên cứu</span>
                 </li>
               </ul>
             </div>
@@ -176,25 +176,25 @@ export default function ChatInterface() {
           {/* Quick Actions */}
           <div className="mb-4 hidden sm:flex flex-wrap gap-2">
             <button 
-              onClick={() => insertQuickMessage("Tư vấn về thuốc paracetamol")}
+              onClick={() => insertQuickMessage("Giải thích cho tôi về lịch sử Việt Nam")}
               className="px-3 py-1.5 text-sm bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full transition-colors"
             >
-              <i className="fas fa-pills mr-1"></i>
-              Tư vấn thuốc
+              <i className="fas fa-book mr-1"></i>
+              Lịch sử
             </button>
             <button 
-              onClick={() => insertQuickMessage("Tác dụng phụ của thuốc là gì?")}
+              onClick={() => insertQuickMessage("Hướng dẫn học lập trình Python")}
               className="px-3 py-1.5 text-sm bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full transition-colors"
             >
-              <i className="fas fa-exclamation-triangle mr-1"></i>
-              Tác dụng phụ
+              <i className="fas fa-code mr-1"></i>
+              Lập trình
             </button>
             <button 
-              onClick={() => insertQuickMessage("Liều dùng thuốc như thế nào?")}
+              onClick={() => insertQuickMessage("Tư vấn về kinh doanh và khởi nghiệp")}
               className="px-3 py-1.5 text-sm bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full transition-colors"
             >
-              <i className="fas fa-prescription-bottle mr-1"></i>
-              Liều dùng
+              <i className="fas fa-briefcase mr-1"></i>
+              Kinh doanh
             </button>
           </div>
 
@@ -208,7 +208,7 @@ export default function ChatInterface() {
                   onChange={handleTextareaInput}
                   onKeyDown={handleKeyDown}
                   rows={1}
-                  placeholder="Nhập câu hỏi của bạn về thuốc và sức khỏe..."
+                  placeholder="Hỏi tôi bất kỳ điều gì bạn muốn biết..."
                   className="w-full resize-none rounded-2xl border border-slate-300 px-4 py-3 pr-12 focus:border-medical-blue focus:ring-2 focus:ring-medical-blue/20 focus:outline-none text-slate-800 placeholder-slate-500 max-h-32 overflow-y-auto"
                   disabled={sendMessageMutation.isPending}
                 />
@@ -236,7 +236,7 @@ export default function ChatInterface() {
           <div className="mt-4 text-center">
             <p className="text-xs text-slate-500 max-w-2xl mx-auto">
               <i className="fas fa-info-circle mr-1"></i>
-              Thông tin được cung cấp chỉ mang tính chất tham khảo. Luôn tham khảo ý kiến bác sĩ hoặc dược sĩ có chuyên môn trước khi sử dụng thuốc.
+              Thông tin được cung cấp chỉ mang tính chất tham khảo. Luôn kiểm chứng thông tin từ các nguồn đáng tin cậy khi cần thiết.
             </p>
           </div>
         </div>

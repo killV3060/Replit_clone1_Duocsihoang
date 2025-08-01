@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { generatePharmacyResponse } from "./services/gemini";
+import { generateResponse } from "./services/gemini";
 import { insertMessageSchema } from "@shared/schema";
 import { z } from "zod";
 
@@ -39,7 +39,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
 
       // Generate AI response
-      const aiResponse = await generatePharmacyResponse(message);
+      const aiResponse = await generateResponse(message);
 
       // Save AI response
       const assistantMessage = await storage.createMessage({
